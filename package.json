@@ -1,0 +1,24 @@
+{
+  "name": "lending-streaming",
+  "version": "1.0.0",
+  "description": "",
+  "source": "index.html",
+
+  "scripts": {
+   "sass:watch": "sass --style=expanded --watch styles:dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gronius/lending-streaming.git"
+  },
+  "author": "VolodymyrV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gronius/lending-streaming/issues"
+  },
+  "homepage": "https://github.com/Gronius/lending-streaming#readme",
+  "devDependencies": {
+    "parsel": "^0.3.0",
+    "sass": "^1.97.3"
+  }
+}
