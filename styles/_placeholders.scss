@@ -5,7 +5,14 @@
     cursor: pointer;
     color: $color_black;
   }
-    
+   
+}
+%hover-light {
+  &:hover {
+    cursor: pointer;
+    color: $color_white;
+  }
+ 
 }
 %hover-black-icon {
     &:hover {
