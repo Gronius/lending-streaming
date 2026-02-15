@@ -6,8 +6,8 @@
 .header {
   width: 100%;
   height: 50px;
-  // background-color: color.adjust(v.$color_white, $alpha: -0.85);
   background-color: color.adjust($color_white, $alpha: -0.85);
+  // background-color: color.adjust($color_blue, $alpha: -0.85);
   // border: 1px solid v.$color_white;
   border: {
     bottom:{
