@@ -115,3 +115,31 @@
      width: 300px;
   }
 }
+
+.wave-card{
+  width: 500px;
+  height: 275px;
+  background: url('../assets/wave_card_bg.svg') center/contain no-repeat;
+  @include m.d-flex(start, start, nowrap, column, 0, 35px);
+
+     &__avatar{
+      margin: 20px 0 0 20px;
+    }
+
+    &__quote{
+      @include m.font(20px, 400, $color_white);
+      margin: 0 40px 0 30px;
+      text-align: justify;
+      line-height: 1.4;
+    }
+
+    @media (max-width: $media_md){
+      width: 330px;
+      row-gap: 15px;
+      background: url('../assets/wave_card_bg.svg') 50% 0/contain no-repeat;
+    }
+      &__quote{
+      @include m.font(13px, 400, $color_white);
+
+    }
+}
