@@ -1,0 +1,55 @@
+@use 'variables' as *;
+@use 'mixins' as m;
+@use 'sass:color';
+@use 'placeholders';
+
+.footer-section{
+    background-color: color.adjust($color_white, $alpha: -0.85);
+    box-shadow: 0 -5px 20px 0 rgba(0,0,0, .2);
+
+    .footer{
+      width: 100%;
+      height: 136px;
+      margin: 0 auto;
+      padding:0 15px;
+      @include m.d-flex(space-between, center, nowrap, row, 0, 0);
+
+      &__terms{
+        @include m.d-flex(start, start, nowrap, column, 0, 15px);
+        transition: 0.3s;
+
+        &-links{
+          @include m.d-flex(start, center, nowrap, row, 40px, 0);
+          @include m.font(20px, 400, $color_white);
+          
+        }
+
+        &-link {
+          @extend %hover-black;
+        }
+
+        &-rights {
+           @include m.font(14px, 300, $color_white);
+        }
+      }
+
+      &__contacts{
+          @include m.d-flex(space-between, center, nowrap, row, 43px, 0);
+
+          &-icon{
+            width: 25px;
+            height: 24px;
+            fill: $color_white;
+            transition: 0.3s;
+
+            &:hover {
+              fill: $color_black;
+            }
+          }
+      }
+
+      @media (max-width: $media_sm){
+           @include m.d-flex(center, center, wrap, column-reverse, 0, 15px);
+      }
+    }
+}
